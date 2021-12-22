@@ -1,107 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4CQSKN1KXB"
-    ></script> -->
-    <!-- <script>
-      // Select the node that will be observed for mutations
-      const targetNode = document.querySelector('html')
-      console.log(targetNode)
-      // Options for the observer (which mutations to observe)
-      const config = { attributes: true, childList: true, subtree: true }
-
-      // Callback function to execute when mutations are observed
-      const callback = function (mutationsList, observer) {
-        // Use traditional 'for loops' for IE 11
-        for (const mutation of mutationsList) {
-          // if (mutation.type === 'childList') {
-          //   console.log('A child node has been added or removed.')
-          // } else if (mutation.type === 'attributes') {
-          //   console.log(
-          //     'The ' + mutation.attributeName + ' attribute was modified.',
-          //   )
-          // }
-          console.log(mutation)
-          if (
-            mutation.addedNodes[0] &&
-            mutation.addedNodes[0].hasOwnProperty('getAttribute')
-          ) {
-            console.log(mutation)
-            if (
-              mutation.addedNodes[0].getAttribute('src') ===
-              'https://www.google-analytics.com/analytics.js'
-            ) {
-              console.log(mutation)
-            }
-          }
-
-          // console.log(mutation)
-          // if (document.contains('analytics.js')) {
-          //   console.log("It's in the DOM!")
-          //   observer.disconnect()
-          // }
-        }
-      }
-
-      // Create an observer instance linked to the callback function
-      const observer = new MutationObserver(callback)
-
-      // Start observing the target node for configured mutations
-      observer.observe(targetNode, config)
-
-      // // Later, you can stop observing
-      // observer.disconnect()
-    </script> -->
-    <!-- <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-4CQSKN1KXB')
-    </script> -->
-    <!-- Google Tag Manager -->
-    <!-- <script>
-      const startObservable = (domNode) => {
-        var targetNode = domNode
-
-        var observerConfig = {
-          attributes: true,
-          childList: true,
-          characterData: true,
-        }
-
-        return new Promise((resolve) => {
-          var observer = new MutationObserver(function (mutations) {
-            // For the sake of...observation...let's output the mutation to console to see how this all works
-            mutations.forEach(function (mutation) {
-              console.log(mutation.type)
-            })
-            resolve(mutations)
-          })
-          observer.observe(targetNode, observerConfig)
-        })
-      }
-      const waitForMutation = async () => {
-        const button = document.querySelector(
-          'script[src="https://www.google-analytics.com/analytics.js"]',
-        )
-        try {
-          const results = await startObservable(button)
-          return results
-        } catch (err) {
-          console.error(err)
-        }
-      }
-      waitForMutation()
-    </script> -->
-    <!-- Google Tag Manager -->
     <script>
       ;(function (w, d, s, l, i) {
         w[l] = w[l] || []
@@ -114,7 +13,10 @@
         f.parentNode.insertBefore(j, f)
       })(window, document, 'script', 'dataLayer', 'GTM-KL62TVF')
     </script>
-    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <!-- End Google Tag Manager -->
     <script src="ab.js"></script>
   </head>
